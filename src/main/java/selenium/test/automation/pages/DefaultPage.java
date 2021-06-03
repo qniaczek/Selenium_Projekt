@@ -22,7 +22,7 @@ public abstract class DefaultPage {
         element.click();
     }
 
-    protected boolean isElementDisplayed(WebElement element) {
-        return element.isDisplayed();
+    protected boolean isElementHidden(WebElement element) {
+        return !element.isDisplayed();
     }
 }

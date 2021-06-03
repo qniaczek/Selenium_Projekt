@@ -22,6 +22,6 @@ public class VersionListPage extends DefaultPage {
     }
 
     public boolean isInfoBoxDisplayed () {
-        return isElementDisplayed(infoBox);
+        return isElementHidden(infoBox);
     }
 }

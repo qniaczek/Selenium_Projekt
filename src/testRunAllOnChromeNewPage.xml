@@ -9,7 +9,7 @@
         <classes>
             <class name="selenium.test.automation.tests.LoginTest"/>
             <class name="selenium.test.automation.tests.admin.SearchUserTest"/>
-            <class name="selenium.test.automation.tests.version.AddVersionTest"/>
+            <!--<class name="selenium.test.automation.tests.version.AddVersionTest"/>-->
         </classes>
     </test>
 </suite>

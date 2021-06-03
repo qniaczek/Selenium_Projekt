@@ -6,28 +6,28 @@ import org.openqa.selenium.support.FindBy;
 
 public class DashboardPage extends DefaultPage {
 
-    @FindBy(xpath = "//html/body/header/div[2]/div[2]/a/span")
+    @FindBy(xpath = "//html/body/div[1]/div[1]/div[10]/ul/li[4]/a")
     private WebElement logoutButton;
 
-    @FindBy(css = "html > body > aside > div > ul > li.item4:nth-child(4) > a:nth-child(1)")
-    private WebElement environmentListButton;
+    @FindBy(xpath = "//html/body/div[1]/div[2]/ul/li[1]/a/b")
+    private WebElement adminButton;
 
-    @FindBy(css = "html > body > aside > div > ul > li.item4:nth-child(5) > a:nth-child(1)")
-    private WebElement versionListButton;
+    @FindBy(xpath = "//html/body/div[1]/div[2]/ul/li[5]/a/b")
+    private WebElement recruitmenButton;
 
     public DashboardPage(WebDriver driver) {
         super(driver);
     }
 
-    public boolean isLogoutButtonDisplayed() {
-        return isElementDisplayed(logoutButton);
+    public boolean isLogoutButtonHidden() {
+        return isElementHidden(logoutButton);
     }
 
-    public void goToEnvironmentListPage() {
-        clickElement(environmentListButton);
+    public void goToAdminPage() {
+        clickElement(adminButton);
     }
 
     public void goToVersionListPage() {
-        clickElement(versionListButton);
+        clickElement(recruitmenButton);
     }
 }

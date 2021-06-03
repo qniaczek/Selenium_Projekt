@@ -10,10 +10,10 @@ public class LoginTest extends DefaultTest {
     @Test
     public void successLoginTest() {
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.fillLoginForm("administrator@testarena.pl", "sumXQQ72$L");
+        loginPage.fillLoginForm("opensourcecms", "opensourcecms");
         loginPage.submitLoginForm();
 
         DashboardPage dashboardPage = new DashboardPage(driver);
-        Assert.assertTrue(dashboardPage.isLogoutButtonDisplayed());
+        Assert.assertTrue(dashboardPage.isLogoutButtonHidden());
     }
 }

@@ -6,13 +6,13 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends DefaultPage {
 
-    @FindBy(id = "email")
-    private WebElement emailField;
+    @FindBy(id = "txtUsername")
+    private WebElement username;
 
-    @FindBy(id = "password")
+    @FindBy(id = "txtPassword")
     private WebElement passwordField;
 
-    @FindBy(id = "login")
+    @FindBy(id = "btnLogin")
     private WebElement loginButton;
 
     public LoginPage(WebDriver driver) {
@@ -20,7 +20,7 @@ public class LoginPage extends DefaultPage {
     }
 
     public void fillLoginForm(String email, String password) {
-        fillElement(emailField, email);
+        fillElement(username, email);
         fillElement(passwordField, password);
     }
 

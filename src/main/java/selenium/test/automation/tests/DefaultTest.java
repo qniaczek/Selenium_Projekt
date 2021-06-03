@@ -48,7 +48,7 @@ public abstract class DefaultTest {
 
         driver = new DriverFactory().getDriver(BrowserType.valueOf(browserType));
 
-        driver.get("http://beta.demo.testarena.pl/login");
+        driver.get("https://s1.demo.opensourcecms.com/s/44");
     }
 
     @BeforeMethod
